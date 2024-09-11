@@ -1,11 +1,22 @@
-import { useState } from 'react'
+import FetchButton from "./components/fetchButton/fetchButton"
+import Input from "./components/Input/Input"
+import Suggestion from "./components/suggestion/suggestion"
 
 function App() {
 
   return (
-    <h1 className="text-3xl font-bold underline">
-      Hello world!
-    </h1>
+    <div className="w-screen min-h-screen bg-blue-800 p-4">
+      <h1 className="text-2xl font-bold text-center">CipherMind AI</h1>
+      <div className="mt-6 max-w-4xl mx-auto">
+        <Input/>
+        <FetchButton/>
+        <Suggestion/>
+      </div>
+      {/* <div className="mt-6 max-w-4xl mx-auto">
+        <Input/>
+        <Suggestion/>
+      </div> */}
+    </div>
   )
 }
 
